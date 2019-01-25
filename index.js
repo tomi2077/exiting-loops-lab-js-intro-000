@@ -10,7 +10,7 @@ var breakOut = (array, changeValue, stopValue) => {
 
 var keepGoing = (array, changeValue, skipValue) => {
   for (let i =0; i < array.length; i++) {
-    if(array[i] !== skipvalue){
+    if(array[i] !== skipValue){
       continue;
     }
     array[i] = changeValue
