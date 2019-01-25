@@ -17,3 +17,7 @@ var keepGoing = (array, changeValue, skipValue) => {
   }
   return array
 }
+
+var findBy = (array,findFn) => {
+  
+}
