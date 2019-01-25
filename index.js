@@ -20,16 +20,8 @@ var keepGoing = (array, changeValue, skipValue) => {
 
 var findBy = (array,findFn) => {
  for (let i = 0; i < array.length; i++) {
-   if(array[i] == findFn){
-     break
+   if(findFn(array[i])){
+     return array[i]
    }
-   return array[i]
-  }
-
-function find(array, criteriaFunc) {
-  for (let i = 0; i < array.length; i++) {
-    if (criteriaFunc(array[i])) {
-      return array[i]
-    }
   }
 }
