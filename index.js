@@ -1,6 +1,10 @@
 var breakOut = (array, changeValue, stopValue) => {
   for(let i=0; i<array.length; i++) {
-    if (array[i] !== changeValue){
+    if (array[i] === stopValue){
+      break
+    }
+    array[i] !== changeValue
+  }
       return array[changeValue]
       if (array[changeValue]){
         break;
@@ -10,11 +14,14 @@ var breakOut = (array, changeValue, stopValue) => {
 }
 
 
-function firstNotEqual(array, value) {
-  for (let i = 0; i < array.length; i++) {
-    debugger
-    if (array[i] !== value) {
-      return array[i]
+function breakOut(array, changeValue, stopValue) {
+  for (let i = 0, l = array.length; i < l; i++) {
+    if (array[i] === stopValue) {
+      break
     }
+
+    array[i] = changeValue
   }
+
+  return array
 }
